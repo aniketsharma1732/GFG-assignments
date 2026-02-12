@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Addition</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Addition Program</h1>
+
+    <label>Enter First Number:</label>
+    <input type="number" id="num1"><br><br>
+
+    <label>Enter Second Number:</label>
+    <input type="number" id="num2"><br><br>
+
+    <button onclick="addNumbers()">Add Numbers</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function addNumbers() {
+            // Taking input values
+            let number1 = Number(document.getElementById("num1").value);
+            let number2 = Number(document.getElementById("num2").value);
+
+            // Adding numbers
+            let sum = number1 + number2;
+
+            // Checking even or odd
+            let resultText;
+
+            if (sum % 2 === 0) {
+                resultText = "The sum is " + sum + " and it is Even.";
+            } else {
+                resultText = "The sum is " + sum + " and it is Odd.";
+            }
+
+            // Display result
+            document.getElementById("result").innerText = resultText;
+        }
+    </script>
+</body>
+
+</html>

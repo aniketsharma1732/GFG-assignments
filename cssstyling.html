@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Assignment</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* Reset default spacing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f4f7;
+            color: #333;
+        }
+
+        /* Header */
+        #header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .heading {
+            color: white;
+        }
+
+        /* Content section */
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 6px;
+        }
+
+        .sub-heading {
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        #navbar {
+            background-color: #34495e;
+            padding: 15px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-list li {
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-list li:hover {
+            text-decoration: underline;
+        }
+
+        /* Image section */
+        .image-section {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .image-section img {
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        /* Link section */
+        .link-section {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .link-section a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .link-section a:hover {
+            color: #1abc9c;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #footer p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 class="heading">This is the header tag</h1>
+    </header>
+
+    <section class="content">
+        <h1 class="sub-heading">This is paragraph tag</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem corrupti error, rerum quia magni totam porro,
+            possimus optio, aut reiciendis natus.
+        </p>
+    </section>
+
+    <nav id="navbar">
+        <ul class="nav-list">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Customer Support</li>
+        </ul>
+    </nav>
+
+    <div class="image-section">
+        <img src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_user_personalization&w=740&q=80"
+            alt="Bird Image">
+    </div>
+
+    <div class="link-section">
+        <a href="https://www.w3schools.com/react/react_useeffect.asp" target="_blank">
+            Visit W3Schools
+        </a>
+    </div>
+
+    <footer id="footer">
+        <h1 class="heading">This is footer tag</h1>
+        <p>Contact</p>
+        <p>About Us</p>
+        <p>Support</p>
+    </footer>
+
+</body>
+
+</html>

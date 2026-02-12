@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions and Arrays</title>
+</head>
+
+<body>
+
+    <h1>Student List</h1>
+
+    <button onclick="displayStudents()">Display Students</button>
+
+    <ul id="studentList"></ul>
+
+    <h3>Search Student</h3>
+    <input type="text" id="searchInput" placeholder="Enter student name">
+    <button onclick="searchStudent()">Search</button>
+
+    <p id="searchResult"></p>
+
+    <script>
+
+        // Array of student names
+        let students = ["Aniket", "Rahul", "Priya", "Neha", "Aman"];
+
+        // Function to display all student names
+        function displayStudents() {
+            let list = document.getElementById("studentList");
+            list.innerHTML = ""; // Clear previous list
+
+            students.forEach(function (name) {
+                let li = document.createElement("li");
+                li.textContent = name;
+                list.appendChild(li);
+            });
+        }
+
+        // Function to search for a student
+        function searchStudent() {
+            let searchName = document.getElementById("searchInput").value;
+            let result = document.getElementById("searchResult");
+
+            if (students.includes(searchName)) {
+                result.innerText = searchName + " is found in the list.";
+            } else {
+                result.innerText = searchName + " is not found in the list.";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
